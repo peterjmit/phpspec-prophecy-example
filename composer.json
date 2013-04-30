@@ -1,0 +1,17 @@
+{
+    "name": "pete/phpspec-prophecy",
+    "autoload": {
+        "psr-0": { "": "src/" }
+    },
+    "require": {
+        "phpspec/phpspec": "2.0.*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Peter Mitchell",
+            "email": "peterjmit@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
