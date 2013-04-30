@@ -6,4 +6,9 @@ class HelloWorld
     {
         return 'Hello!';
     }
+
+    public function sayHelloToSomeone(Person $person)
+    {
+        return $this->sayHello() . ' ' . $person->getName();
+    }
 }
