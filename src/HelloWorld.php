@@ -4,7 +4,7 @@ class HelloWorld
 {
     public function sayHello()
     {
-        return 'Hello!';
+        return 'Hello';
     }
 
     public function sayHelloToSomeone(Person $person)

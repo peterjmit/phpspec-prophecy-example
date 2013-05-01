@@ -14,7 +14,7 @@ class HelloWorldSpec extends ObjectBehavior
 
     function it_should_say_hello()
     {
-        $this->sayHello()->shouldReturn('Hello!');
+        $this->sayHello()->shouldReturn('Hello');
     }
 
     /**
