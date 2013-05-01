@@ -18,4 +18,18 @@ class PersonSpec extends ObjectBehavior
 
         $this->getName()->shouldReturn('test');
     }
+
+    function it_should_be_male()
+    {
+        $this->setGender('male');
+
+        $this->shouldBeMale();
+    }
+
+    function it_should_be_female()
+    {
+        $this->setGender('female');
+
+        $this->shouldBeFemale();
+    }
 }
