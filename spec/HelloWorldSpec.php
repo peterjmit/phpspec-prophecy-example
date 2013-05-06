@@ -34,7 +34,8 @@ class HelloWorldSpec extends ObjectBehavior
     {
         $person->getName()->willReturn('Jane');
         $person->isFemale()->willReturn(true);
+        $person->isMale()->willReturn(false);
 
-        $this->addressSomeoneWithSalutation($person)->shouldReturn('Hello Ms Jane');
+        $this->addressSomeoneWithSalutation($person)->shouldReturn('Dear Ms. Jane');
     }
 }
