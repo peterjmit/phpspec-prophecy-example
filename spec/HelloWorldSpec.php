@@ -17,20 +17,14 @@ class HelloWorldSpec extends ObjectBehavior
         $this->sayHello()->shouldReturn('Hello');
     }
 
-    /**
-     * @param Person $person
-     */
-    function it_should_say_hello_to_someone($person)
+    function it_should_say_hello_to_someone(\Person $person)
     {
         $person->getName()->willReturn('Steve');
 
         $this->sayHelloToSomeone($person)->shouldReturn('Hello Steve');
     }
 
-    /**
-     * @param Person $person
-     */
-    function it_should_address_someone_with_a_gender_specific_salutation($person)
+    function it_should_address_someone_with_a_gender_specific_salutation(\Person $person)
     {
         $person->getName()->willReturn('Jane');
         $person->isFemale()->willReturn(true);
